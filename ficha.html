@@ -110,6 +110,69 @@
           </button>
           <p id="resultadocarisma"></p>
         </div>
+        <h2>Esforço</h2>
+        <div>
+          <label for="basico">Básico:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="basico"
+            name="basico"
+            required
+          />
+          <button type="button" onclick="rolarBasico('basico')">Rolar</button>
+          <p id="resultadobasico"></p>
+        </div>
+        <div>
+          <label for="arma">Armas e Ferramentas:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="arma"
+            name="arma"
+            required
+          />
+          <button type="button" onclick="rolarArma('arma')">Rolar</button>
+          <p id="resultadoarma"></p>
+        </div>
+        <div>
+          <label for="armaFogo">Arma de Fogo:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="armaFogo"
+            name="armaFogo"
+            required
+          />
+          <button type="button" onclick="rolarArmaFogo('armaFogo')">
+            Rolar
+          </button>
+          <p id="resultadoarmaFogo"></p>
+        </div>
+        <div>
+          <label for="magia">Mágia:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="magia"
+            name="magia"
+            required
+          />
+          <button type="button" onclick="rolarMagia('magia')">Rolar</button>
+          <p id="resultadomagia"></p>
+        </div>
+        <div>
+          <label for="supremo">Supremo:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="supremo"
+            name="supremo"
+            required
+          />
+          <button type="button" onclick="rolarSupremo('supremo')">Rolar</button>
+          <p id="resultadosupremo"></p>
+        </div>
       </div>
       <div class="items">
         <h2>Itens</h2>
