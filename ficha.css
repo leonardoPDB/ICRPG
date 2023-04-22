@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202020;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.form {
+  width: calc(50% - 10px);
+  margin-top: 3rem;
+}
+
+.form h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form > div > label {
+  width: 100px;
+}
+
+.form > div > input[type='number'],
+.form > div > input[type='text'],
+.form > div > textarea {
+  width: 50%;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.form > div > input[type='number'] {
+  width: 10%;
+}
+
+.form > div > button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form > div > p {
+  margin-left: 10px;
+}
+
+.items {
+  width: calc(50% - 10px);
+}
+
+.items > div {
+  margin-bottom: 10px;
+}
+
+.items > div > label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.items > div > textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button {
+  margin-left: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #202020;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #4caf50;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .form {
+    width: 50%;
+    margin: 3rem auto;
+  }
+
+  .form > div > input[type='number'] {
+    width: 50px;
+  }
+
+  .form > div > input[type='text'] {
+    width: 200px;
+  }
+
+  .items {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 25%;
+  }
+
+  .items > div > textarea {
+    width: 70vw;
+  }
+
+  .form,
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

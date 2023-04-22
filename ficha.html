@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ficha.css" />
+    <title>Ficha de Personagem</title>
+  </head>
+  <body onload="carregarFicha()">
+    <h1>Ficha de Personagem</h1>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html">Gerador</a>
+          <a href="ficha.html">Ficha</a>
+        </div>
+      </div>
+    </nav>
+    <form class="container">
+      <div class="form">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+        <div>
+          <label for="raca">Raça:</label>
+          <input type="text" id="raca" name="raca" required />
+        </div>
+        <h2>Atributos</h2>
+        <div>
+          <label for="forca">Força:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="forca"
+            name="forca"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('forca')">Rolar</button>
+          <p id="resultadoforca"></p>
+        </div>
+        <div>
+          <label for="destreza">Destreza:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="destreza"
+            name="destreza"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('destreza')">
+            Rolar
+          </button>
+          <p id="resultadodestreza"></p>
+        </div>
+        <div>
+          <label for="constituicao">Constituição:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="constituicao"
+            name="constituicao"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('constituicao')">
+            Rolar
+          </button>
+          <p id="resultadoconstituicao"></p>
+        </div>
+        <div>
+          <label for="inteligencia">Inteligência:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="inteligencia"
+            name="inteligencia"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('inteligencia')">
+            Rolar
+          </button>
+          <p id="resultadointeligencia"></p>
+        </div>
+        <div>
+          <label for="sabedoria">Sabedoria:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="sabedoria"
+            name="sabedoria"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('sabedoria')">
+            Rolar
+          </button>
+          <p id="resultadosabedoria"></p>
+        </div>
+        <div>
+          <label for="carisma">Carisma:</label>
+          <input
+            type="number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            id="carisma"
+            name="carisma"
+            required
+          />
+          <button type="button" onclick="rolarAtributo('carisma')">
+            Rolar
+          </button>
+          <p id="resultadocarisma"></p>
+        </div>
+      </div>
+      <div class="items">
+        <h2>Itens</h2>
+        <div>
+          <textarea id="itens" name="itens"></textarea>
+        </div>
+        <h2>Habilidades</h2>
+        <div>
+          <textarea id="habilidades" name="habilidades"></textarea>
+        </div>
+        <button type="button" onclick="salvarFicha()">Salvar a Ficha</button>
+      </div>
+    </form>
+    <script src="ficha.js"></script>
+  </body>
+</html>
