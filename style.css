@@ -1,0 +1,81 @@
+body {
+  background-color: #202020;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 2em;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 1em;
+}
+
+select {
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  appearance: none;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 2em 0.5em 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+#resultado {
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.select-icon {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%);
+}
+
+.fa-angle-down {
+  color: #fff;
+}
+
+#selecionar-tabela {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 120px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  color: #fff;
+}

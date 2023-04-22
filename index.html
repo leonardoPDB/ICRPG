@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gerador de Loot</title>
+  </head>
+  <body>
+    <h1>Itens Aleatórios</h1>
+    <p>Selecione uma tabela e clique no botão para rolar um item aleatório:</p>
+    <div class="select-wrapper">
+      <select id="selecionar-tabela">
+        <option value="ancient">Ancião</option>
+        <option value="shabby">Comum</option>
+        <option value="cursed">Amaldiçoado</option>
+        <option value="sci-fi">Ficção Cientifica</option>
+        <option value="epic">Épico</option>
+        <option value="bizarre">Bizarro</option>
+        <option value="ghost-mountain">Montanha Fantasma</option>
+        <option value="magic">Mágico</option>
+      </select>
+      <div class="select-icon">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+    <button onclick="rolar()">Rolar</button>
+    <p id="resultado"></p>
+    <script src="index.js"></script>
+  </body>
+</html>
