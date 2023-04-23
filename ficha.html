@@ -21,17 +21,50 @@
       <div class="form">
         <div>
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required />
+          <input
+            onchange="salvarFicha()"
+            type="text"
+            id="nome"
+            name="nome"
+            required
+          />
         </div>
         <div>
           <label for="raca">Raça:</label>
-          <input type="text" id="raca" name="raca" required />
+          <input
+            onchange="salvarFicha()"
+            type="text"
+            id="raca"
+            name="raca"
+            required
+          />
+        </div>
+        <div>
+          <label for="vida">Vida:</label>
+          <input
+            onchange="salvarFicha()"
+            type="number"
+            id="vida"
+            name="vida"
+            required
+          />
+        </div>
+        <div>
+          <label for="defesa">Defesa:</label>
+          <input
+            onchange="salvarFicha()"
+            type="number"
+            id="defesa"
+            name="defesa"
+            required
+          />
         </div>
         <h2>Atributos</h2>
         <div>
           <label for="forca">Força:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="forca"
             name="forca"
@@ -44,6 +77,7 @@
           <label for="destreza">Destreza:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="destreza"
             name="destreza"
@@ -58,6 +92,7 @@
           <label for="constituicao">Constituição:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="constituicao"
             name="constituicao"
@@ -72,6 +107,7 @@
           <label for="inteligencia">Inteligência:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="inteligencia"
             name="inteligencia"
@@ -86,6 +122,7 @@
           <label for="sabedoria">Sabedoria:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="sabedoria"
             name="sabedoria"
@@ -100,6 +137,7 @@
           <label for="carisma">Carisma:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="carisma"
             name="carisma"
@@ -115,6 +153,7 @@
           <label for="basico">Básico:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="basico"
             name="basico"
@@ -127,6 +166,7 @@
           <label for="arma">Armas e Ferramentas:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="arma"
             name="arma"
@@ -139,6 +179,7 @@
           <label for="armaFogo">Arma de Fogo:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="armaFogo"
             name="armaFogo"
@@ -153,6 +194,7 @@
           <label for="magia">Mágia:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="magia"
             name="magia"
@@ -165,6 +207,7 @@
           <label for="supremo">Supremo:</label>
           <input
             type="number"
+            onchange="salvarFicha()"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             id="supremo"
             name="supremo"
@@ -177,13 +220,16 @@
       <div class="items">
         <h2>Itens</h2>
         <div>
-          <textarea id="itens" name="itens"></textarea>
+          <textarea onchange="salvarFicha()" id="itens" name="itens"></textarea>
         </div>
         <h2>Habilidades</h2>
         <div>
-          <textarea id="habilidades" name="habilidades"></textarea>
+          <textarea
+            onchange="salvarFicha()"
+            id="habilidades"
+            name="habilidades"
+          ></textarea>
         </div>
-        <button type="button" onclick="salvarFicha()">Salvar a Ficha</button>
       </div>
     </form>
     <script src="ficha.js"></script>

@@ -2,6 +2,8 @@ function salvarFicha() {
   const ficha = {
     nome: document.getElementById('nome').value,
     raca: document.getElementById('raca').value,
+    vida: document.getElementById('vida').value,
+    defesa: document.getElementById('defesa').value,
     forca: document.getElementById('forca').value,
     destreza: document.getElementById('destreza').value,
     constituicao: document.getElementById('constituicao').value,
@@ -17,7 +19,6 @@ function salvarFicha() {
     supremo: document.getElementById('supremo').value,
   }
   localStorage.setItem('ficha', JSON.stringify(ficha))
-  alert('Ficha salva com sucesso!')
 }
 
 function carregarFicha() {
@@ -25,6 +26,8 @@ function carregarFicha() {
   if (ficha) {
     document.getElementById('nome').value = ficha.nome
     document.getElementById('raca').value = ficha.raca
+    document.getElementById('vida').value = ficha.vida
+    document.getElementById('defesa').value = ficha.defesa
     document.getElementById('forca').value = ficha.forca
     document.getElementById('destreza').value = ficha.destreza
     document.getElementById('constituicao').value = ficha.constituicao
