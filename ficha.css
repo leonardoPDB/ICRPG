@@ -168,8 +168,8 @@ nav {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
   }
 
   .container {
@@ -185,28 +185,18 @@ nav {
     margin: 3rem auto;
   }
 
-  .form h2 {
-    margin-right: auto;
-    margin-left: -5rem;
-  }
-
   .form > div > input[type='number'] {
     width: 50px;
   }
 
   .form > div > input[type='text'] {
-    width: 140px;
+    width: 1200px;
   }
 
   .items {
     width: 50%;
     margin-top: 0;
     margin-left: 25%;
-  }
-
-  .items h2 {
-    margin-right: auto;
-    margin-left: -5rem;
   }
 
   .items > div > textarea {
@@ -217,7 +207,6 @@ nav {
   .items {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    /* align-items: center; */
+    align-items: center;
   }
 }
